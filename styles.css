@@ -37,9 +37,9 @@ body {
 }
 
 .dark body {
-  background-color: var(--background-dark);
+  background-color: var(--marble-bg);
   background-image: none;
-  color: var(--text-dark);
+  color: var(--text-light);
 }
 
 body.has-fixed-topbar {
