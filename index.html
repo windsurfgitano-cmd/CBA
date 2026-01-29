@@ -268,4 +268,18 @@
 <div class="h-24"></div>
 
 </div>
+<script>
+// Simple animation for marketing quote only
+const quote = document.querySelector('blockquote');
+if (quote) {
+    quote.style.opacity = '0';
+    quote.style.transform = 'translateY(20px)';
+    quote.style.transition = 'all 1.5s ease-out';
+    
+    setTimeout(() => {
+        quote.style.opacity = '1';
+        quote.style.transform = 'translateY(0)';
+    }, 500);
+}
+</script>
 </body></html>
