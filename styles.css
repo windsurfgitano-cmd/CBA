@@ -5,8 +5,8 @@
 :root {
   --primary: #D4AF37;
   --background-light: #FFFEF7;
-  --background-dark: #FFF8E7;
-  --marble-bg: #FFFEF7;
+  --background-dark: #1a1a1a;
+  --marble-bg: #FFF8E7;
   --gucci-green: #2a4a3a;
   --gucci-burgundy: #8b2635;
   --quiet-cream: #f8f4e6;
@@ -29,7 +29,7 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   background-color: var(--marble-bg);
-  background-image: var(--marble-texture);
+  background-image: none;
   color: var(--text-light);
   min-height: max(884px, 100dvh);
   margin: 0;
