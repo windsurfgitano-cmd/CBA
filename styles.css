@@ -459,7 +459,7 @@ body.has-fixed-topbar {
 }
 
 .vision__quote {
-  color: #1e293b;
+  color: var(--text-light);
   font-size: 20px;
   font-weight: 500;
   font-style: italic;
@@ -533,10 +533,14 @@ body.has-fixed-topbar {
 }
 
 .investment__title {
-  color: white;
+  color: var(--text-light);
   font-size: 18px;
   font-weight: 700;
   margin: 0;
+}
+
+.dark .investment__title {
+  color: white;
 }
 
 .investment__badge {
@@ -590,9 +594,13 @@ body.has-fixed-topbar {
 }
 
 .investment__item-title {
-  color: white;
+  color: var(--text-light);
   font-size: 14px;
   font-weight: 600;
+}
+
+.dark .investment__item-title {
+  color: white;
 }
 
 .investment__item-detail {
@@ -602,9 +610,13 @@ body.has-fixed-topbar {
 }
 
 .investment__item-value {
-  color: white;
+  color: var(--text-light);
   font-size: 14px;
   font-weight: 700;
+}
+
+.dark .investment__item-value {
+  color: white;
 }
 
 .investment__item-arrow {
