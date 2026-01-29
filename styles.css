@@ -403,18 +403,16 @@ body.has-fixed-topbar {
 }
 
 .vision__container {
-  background: linear-gradient(135deg, var(--gucci-green) 0%, var(--gucci-burgundy) 100%);
-  backdrop-filter: blur(40px) saturate(220%);
-  -webkit-backdrop-filter: blur(40px) saturate(220%);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(45, 40, 30, 0.95);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
   border-radius: 24px;
   padding: 32px;
   position: relative;
   overflow: hidden;
   transition: all 0.3s;
-  box-shadow: 0 16px 64px 0 rgba(43, 74, 58, 0.3),
-              inset 0 2px 0 0 rgba(255, 255, 255, 0.15),
-              inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 0 rgba(212, 175, 55, 0.15) inset;
 }
 
 .dark .vision__container {
