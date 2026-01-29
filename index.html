@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html class="dark" lang="es"><head>
+<html class="dark" lang="es">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>CBA - Plataforma Digital de Transformación</title>
@@ -16,270 +17,191 @@
 <meta property="twitter:title" content="CBA"/>
 <meta property="twitter:description" content="Descubre nuestra propuesta de trabajo para la Plataforma Digital CBA. Digitalizamos el Board y escalamos a Educación, Networking y Marketplace."/>
 <meta property="twitter:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuB_y9t9xkfhF7C8-UFs-2flFmROcIcJ_XqxBLpIlt50CaarI_PrhtCjJiiC6iLLo-kuqfosM02Q-vhgOO4DS91Hqq67iht3osQYWzPn0mqu02niGk_kIAycsBB-ROjNntK20cRujuTL_ARAIQD9GgpBE3BWR-OcJAF0_VjW-mKW9te2Q6KpPWskUvV1TGR7mxihVJsnqIe_v_QrkFQSkieSafwu9S0W6yoXO_TM4HtV4SfhN2hhDCqfSi96LLACrjwaLhcLFJad4ATP"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#D4AF37","background-light": "#f6f6f8",
-                        "background-dark": "#0A0A0A",},
-                    fontFamily: {
-                        "display": ["Inter", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
-                        "xl": "0.75rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
-<style type="text/tailwindcss">
-        body {
-            font-family: 'Inter', sans-serif;
-            -webkit-font-smoothing: antialiased;
-        }
-        .glass-effect {
-            background: rgba(10, 10, 10, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(212, 175, 55, 0.1);
-        }
-        .frosted-glass {
-            background: rgba(255, 255, 255, 0.12);
-            backdrop-filter: blur(30px) saturate(200%);
-            -webkit-backdrop-filter: blur(30px) saturate(200%);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 
-                0 12px 48px 0 rgba(31, 38, 135, 0.45),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.2),
-                inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
-        }
-        .dark .frosted-glass {
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 
-                0 12px 48px 0 rgba(0, 0, 0, 0.45),
-                inset 0 1px 0 0 rgba(255, 255, 255, 0.1),
-                inset 0 -1px 0 0 rgba(0, 0, 0, 0.2);
-        }
-        .frosted-glass-strategic {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.08) 100%);
-            backdrop-filter: blur(40px) saturate(220%);
-            -webkit-backdrop-filter: blur(40px) saturate(220%);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            box-shadow: 
-                0 16px 64px 0 rgba(212, 175, 55, 0.25),
-                inset 0 2px 0 0 rgba(255, 255, 255, 0.2),
-                inset 0 -2px 0 0 rgba(0, 0, 0, 0.1);
-        }
-        .dark .frosted-glass-strategic {
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(212, 175, 55, 0.05) 100%);
-            border: 1px solid rgba(212, 175, 55, 0.25);
-            box-shadow: 
-                0 16px 64px 0 rgba(212, 175, 55, 0.2),
-                inset 0 2px 0 0 rgba(255, 255, 255, 0.1),
-                inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
-        }
-        .frosted-glass-investment {
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(24px) saturate(200%);
-            -webkit-backdrop-filter: blur(24px) saturate(200%);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            box-shadow: 
-                0 16px 64px 0 rgba(0, 0, 0, 0.7),
-                inset 0 2px 0 0 rgba(255, 255, 255, 0.1),
-                inset 0 -2px 0 0 rgba(0, 0, 0, 0.3);
-        }
-        body {
-            min-height: max(884px, 100dvh);
-        }
-    </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
-  </head>
-<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white">
-<div class="mx-auto max-w-6xl">
-<nav class="sticky top-0 z-50 flex items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md p-4 justify-between border-b border-slate-200 dark:border-white/10">
-<div class="text-primary flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary/10" data-icon="Dashboard">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="body">
+<a href="#contenido" class="skip-link">Saltar al contenido principal</a>
+
+<div class="container">
+<!-- SECTION: HEADER -->
+<header id="header" class="header">
+<nav class="topbar">
+<div class="topbar__logo">
 <span class="material-symbols-outlined">dashboard</span>
 </div>
-<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-tight flex-1 text-center font-display uppercase tracking-widest">Cambridge Business Association</h2>
-<div class="flex w-10 items-center justify-end">
-<button class="flex cursor-pointer items-center justify-center rounded-full h-10 w-10 bg-transparent text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
+<h2 class="topbar__title">Cambridge Business Association</h2>
+<div class="topbar__menu">
+<button class="topbar__menu-btn">
 <span class="material-symbols-outlined">more_vert</span>
 </button>
 </div>
 </nav>
-<header class="relative @container">
-<div class="p-4 @[480px]:p-6">
-<div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-2xl items-center justify-center p-6 @[480px]:p-8 shadow-2xl overflow-hidden relative border border-primary/20" data-alt="Fondo oscuro con líneas de red doradas y abstractas" style='background-image: linear-gradient(rgba(0, 0, 0, 0.7) 0%, rgba(10, 10, 10, 0.95) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_y9t9xkfhF7C8-UFs-2flFmROcIcJ_XqxBLpIlt50CaarI_PrhtCjJiiC6iLLo-kuqfosM02Q-vhgOO4DS91Hqq67iht3osQYWzPn0mqu02niGk_kIAycsBB-ROjNntK20cRujuTL_ARAIQD9GgpBE3BWR-OcJAF0_VjW-mKW9te2Q6KpPWskUvV1TGR7mxihVJsnqIe_v_QrkFQSkieSafwu9S0W6yoXO_TM4HtV4SfhN2hhDCqfSi96LLACrjwaLhcLFJad4ATP");'>
-<div class="flex flex-col gap-6 text-center max-w-md">
-<div class="inline-flex items-center self-center px-4 py-2 rounded-full bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-widest border border-primary/30">
-                        Propuesta Estratégica 2026
-                    </div>
-<h1 class="text-white text-4xl font-black leading-tight tracking-tight @[480px]:text-6xl font-display mb-2">
-                        Plataforma Digital CBA
-                    </h1>
-<p class="text-slate-400 text-base font-normal leading-relaxed @[480px]:text-lg px-4">
-                        Digitalizamos el Board (el core), y escalamos a Educación, Networking y Marketplace para capturar valor, medir impacto y acelerar negocios.
-                    </p>
+
+<section class="hero">
+<div class="hero__background">
+<div class="hero__content">
+<div class="hero__badge">Propuesta Estratégica 2026</div>
+<h1 class="hero__title">Plataforma Digital CBA</h1>
+<p class="hero__description">Digitalizamos el Board (el core), y escalamos a Educación, Networking y Marketplace para capturar valor, medir impacto y acelerar negocios.</p>
 </div>
-<div class="flex flex-col w-full gap-4 max-w-xs mt-6">
-<a href="https://drive.google.com/drive/folders/1nDxRTBxH6uaKni_CfNxOIo3RbgMWD4qP?usp=drive_link" target="_blank" rel="noreferrer" class="flex w-full cursor-pointer items-center justify-center rounded-xl h-14 px-6 bg-primary text-black text-base font-bold shadow-lg shadow-primary/25 hover:brightness-110 transition-all active:scale-[0.98] focus:outline-none focus:ring-4 focus:ring-primary/50">
-<span class="truncate">Ver Propuesta Completa</span>
-<span class="material-symbols-outlined ml-2 text-xl">download</span>
+<div class="hero__actions">
+<a href="https://drive.google.com/drive/folders/1nDxRTBxH6uaKni_CfNxOIo3RbgMWD4qP?usp=drive_link" target="_blank" rel="noreferrer" class="btn btn--primary">
+<span class="btn__text">Ver Propuesta Completa</span>
+<span class="material-symbols-outlined btn__icon">download</span>
 </a>
-<p class="text-primary/60 text-[11px] text-center uppercase tracking-widest font-semibold">
-                        Incluye inversión, fases y condiciones
-                    </p>
+<p class="hero__note">Incluye inversión, fases y condiciones</p>
 </div>
 </div>
-</div>
+</section>
 </header>
 
-<div class="px-6 pt-12 pb-4">
-<h2 class="text-slate-900 dark:text-white text-2xl font-extrabold leading-tight tracking-tight font-display mb-2">Módulos Core</h2>
-<p class="text-slate-500 dark:text-slate-400 text-sm">Pilares fundamentales del ecosistema digital CBA.</p>
-</div>
-<section class="grid grid-cols-1 @[640px]:grid-cols-2 gap-4 p-4 max-w-4xl mx-auto">
-<div class="flex flex-col gap-4 rounded-2xl frosted-glass p-5 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
-<div class="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary">
-<span class="material-symbols-outlined text-2xl">account_balance</span>
-</div>
-<div class="flex flex-col gap-1">
-<h3 class="text-slate-900 dark:text-white text-base font-bold">Board (Core)</h3>
-<p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">Agenda, check-in/check-out, reportes y alertas. El corazón de CBA, digitalizado y medible.</p>
-</div>
-</div>
-<div class="flex flex-col gap-4 rounded-2xl frosted-glass p-5 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
-<div class="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary">
-<span class="material-symbols-outlined text-2xl">hub</span>
-</div>
-<div class="flex flex-col gap-1">
-<h3 class="text-slate-900 dark:text-white text-base font-bold">Networking</h3>
-<p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">One-to-one con tracking de outputs y gamificación enfocada en DAR tiempo.</p>
-</div>
-</div>
-<div class="flex flex-col gap-4 rounded-2xl frosted-glass p-5 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
-<div class="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary">
-<span class="material-symbols-outlined text-2xl">school</span>
-</div>
-<div class="flex flex-col gap-1">
-<h3 class="text-slate-900 dark:text-white text-base font-bold">Educación</h3>
-<p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">Contenido curado + IA, clusters temáticos y recomendaciones personalizadas.</p>
-</div>
-</div>
-<div class="flex flex-col gap-4 rounded-2xl frosted-glass p-5 shadow-sm transition-all duration-300 hover:shadow-lg hover:scale-[1.02]">
-<div class="flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary">
-<span class="material-symbols-outlined text-2xl">shopping_cart</span>
-</div>
-<div class="flex flex-col gap-1">
-<h3 class="text-slate-900 dark:text-white text-base font-bold">Marketplace</h3>
-<p class="text-slate-500 dark:text-slate-400 text-xs leading-relaxed">Beneficios por país/rubro/categoría, verificación y analítica de uso.</p>
-</div>
-</div>
-</section>
+<!-- SECTION: MAIN CONTENT -->
+<main id="contenido" class="main">
 
-<section class="mt-12 px-4 max-w-4xl mx-auto">
-<div class="bg-primary/5 dark:bg-[#111111] rounded-3xl frosted-glass-strategic p-8 @[480px]:p-10 relative overflow-hidden transition-all duration-300 hover:shadow-xl">
-<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
-<div class="relative z-10 flex flex-col items-center text-center">
-<h2 class="text-primary text-xs font-bold uppercase tracking-widest mb-8">Visión Estratégica</h2>
-<blockquote class="text-slate-800 dark:text-slate-200 text-xl font-medium italic leading-relaxed font-display mb-8">
-                    "Marketing is no longer about the stuff that you make, but about the stories you tell."
-                </blockquote>
-<div class="flex flex-col items-center">
-<div class="text-slate-900 dark:text-white font-bold text-base">Seth Godin</div>
-<div class="text-slate-500 dark:text-slate-400 text-xs font-medium uppercase tracking-wide">Marketing</div>
+<!-- SECTION: MODULES -->
+<section id="modulos" class="modules">
+<div class="modules__header">
+<h2 class="modules__title">Módulos Core</h2>
+<p class="modules__subtitle">Pilares fundamentales del ecosistema digital CBA.</p>
+</div>
+
+<div class="modules__grid">
+<div class="card">
+<div class="card__icon">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<div class="card__content">
+<h3 class="card__title">Board (Core)</h3>
+<p class="card__description">Agenda, check-in/check-out, reportes y alertas. El corazón de CBA, digitalizado y medible.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card__icon">
+<span class="material-symbols-outlined">hub</span>
+</div>
+<div class="card__content">
+<h3 class="card__title">Networking</h3>
+<p class="card__description">One-to-one con tracking de outputs y gamificación enfocada en DAR tiempo.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card__icon">
+<span class="material-symbols-outlined">school</span>
+</div>
+<div class="card__content">
+<h3 class="card__title">Educación</h3>
+<p class="card__description">Contenido curado + IA, clusters temáticos y recomendaciones personalizadas.</p>
+</div>
+</div>
+
+<div class="card">
+<div class="card__icon">
+<span class="material-symbols-outlined">shopping_cart</span>
+</div>
+<div class="card__content">
+<h3 class="card__title">Marketplace</h3>
+<p class="card__description">Beneficios por país/rubro/categoría, verificación y analítica de uso.</p>
 </div>
 </div>
 </div>
 </section>
 
-<section class="p-4 mt-12 mb-12 max-w-4xl mx-auto">
-<div class="rounded-2xl frosted-glass-investment p-6 @[480px]:p-8 relative overflow-hidden group transition-all duration-300">
-<div class="flex justify-between items-center mb-6">
-<h3 class="text-white text-lg font-bold">Inversión Estratégica</h3>
-<div class="px-2 py-1 rounded bg-white/10 text-primary text-[10px] font-bold uppercase">2026</div>
-</div>
-<p class="text-slate-400 text-sm mb-6">
-                Propuesta en CLP. Desarrollo por etapas (suma total) y servicios adicionales promocionales.
-            </p>
-<div class="grid grid-cols-1 gap-3">
-<div class="flex items-center justify-between gap-3 p-4 rounded-xl frosted-glass-investment transition-all duration-300 hover:bg-white/10">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">payments</span>
-<div>
-<div class="text-white text-sm font-semibold">Desarrollo Plataforma Completa</div>
-<div class="text-slate-400 text-xs">Plazo: 2 meses</div>
-</div>
-</div>
-<div class="text-white text-sm font-bold">Detalle en PDF</div>
-</div>
-<div class="flex items-center justify-between gap-3 p-4 rounded-xl frosted-glass-investment transition-all duration-300 hover:bg-white/10">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">verified</span>
-<div>
-<div class="text-white text-sm font-semibold">Revisión globallys.org (Promo)</div>
-<div class="text-slate-400 text-xs">Se cobra en la misma factura. Entrega: Globallys</div>
-</div>
-</div>
-<div class="text-white text-sm font-bold">Detalle en PDF</div>
-</div>
-<div class="flex items-center justify-between gap-3 p-4 rounded-xl frosted-glass-investment transition-all duration-300 hover:bg-white/10">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-primary">workspace_premium</span>
-<div>
-<div class="text-white text-sm font-semibold">Certificación ISO Europea</div>
-<div class="text-slate-400 text-xs">Según disponibilidad</div>
-</div>
-</div>
-<div class="text-white text-sm font-bold">Detalle en PDF</div>
-</div>
-<div class="flex items-center gap-3 p-4 rounded-xl frosted-glass-investment transition-all duration-300 hover:bg-white/10">
-<span class="material-symbols-outlined text-primary">picture_as_pdf</span>
-<span class="text-white text-sm font-semibold">Inversión disponible en PDF</span>
-<span class="material-symbols-outlined text-slate-500 text-sm ml-auto">open_in_new</span>
+<!-- SECTION: VISION -->
+<section id="vision" class="vision">
+<div class="vision__container">
+<div class="vision__glow"></div>
+<div class="vision__content">
+<h2 class="vision__title">Visión Estratégica</h2>
+<blockquote class="vision__quote">
+"Marketing is no longer about the stuff that you make, but about the stories you tell."
+</blockquote>
+<div class="vision__author">
+<div class="vision__author-name">Seth Godin</div>
+<div class="vision__author-role">Marketing</div>
 </div>
 </div>
 </div>
 </section>
 
-<footer class="p-8 text-center border-t border-slate-200 dark:border-white/5">
-<p class="text-slate-500 text-xs font-medium tracking-wide">&copy; 2026 CBA Iniciativa de Transformación Digital</p>
-<p class="text-slate-600 text-[10px] mt-2 leading-relaxed uppercase tracking-tighter">Propuesta — Versión 2026</p>
+<!-- SECTION: INVESTMENT -->
+<section id="inversion" class="investment">
+<div class="investment__container">
+<div class="investment__header">
+<h3 class="investment__title">Inversión Estratégica</h3>
+<div class="investment__badge">2026</div>
+</div>
+<p class="investment__description">
+Propuesta en CLP. Desarrollo por etapas (suma total) y servicios adicionales promocionales.
+</p>
+
+<div class="investment__list">
+<div class="investment__item">
+<div class="investment__item-content">
+<span class="material-symbols-outlined investment__item-icon">payments</span>
+<div>
+<div class="investment__item-title">Desarrollo Plataforma Completa</div>
+<div class="investment__item-detail">Plazo: 2 meses</div>
+</div>
+</div>
+<div class="investment__item-value">Detalle en PDF</div>
+</div>
+
+<div class="investment__item">
+<div class="investment__item-content">
+<span class="material-symbols-outlined investment__item-icon">verified</span>
+<div>
+<div class="investment__item-title">Revisión globallys.org (Promo)</div>
+<div class="investment__item-detail">Se cobra en la misma factura. Entrega: Globallys</div>
+</div>
+</div>
+<div class="investment__item-value">Detalle en PDF</div>
+</div>
+
+<div class="investment__item">
+<div class="investment__item-content">
+<span class="material-symbols-outlined investment__item-icon">workspace_premium</span>
+<div>
+<div class="investment__item-title">Certificación ISO Europea</div>
+<div class="investment__item-detail">Según disponibilidad</div>
+</div>
+</div>
+<div class="investment__item-value">Detalle en PDF</div>
+</div>
+
+<div class="investment__item">
+<div class="investment__item-content">
+<span class="material-symbols-outlined investment__item-icon">picture_as_pdf</span>
+<span class="investment__item-title">Inversión disponible en PDF</span>
+<span class="material-symbols-outlined investment__item-arrow">open_in_new</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- SECTION: FOOTER -->
+<footer id="footer" class="footer">
+<p class="footer__copyright">&copy; 2026 CBA Iniciativa de Transformación Digital</p>
+<p class="footer__version">Propuesta — Versión 2026</p>
 </footer>
-<div class="fixed bottom-0 left-0 right-0 p-4 bg-white/80 dark:bg-black/80 backdrop-blur-lg border-t border-slate-200 dark:border-white/10 z-50">
-<a href="https://drive.google.com/drive/folders/1nDxRTBxH6uaKni_CfNxOIo3RbgMWD4qP?usp=drive_link" target="_blank" rel="noreferrer" class="w-full flex items-center justify-center gap-2 bg-primary text-black py-4 rounded-xl font-bold shadow-lg shadow-primary/20 focus:outline-none focus:ring-4 focus:ring-primary/50">
-<span class="material-symbols-outlined text-xl">cloud_download</span>
-            Ver Propuesta Completa
-        </a>
-</div>
-<div class="h-24"></div>
 
+<!-- FIXED CTA -->
+<div class="fixed-cta">
+<a href="https://drive.google.com/drive/folders/1nDxRTBxH6uaKni_CfNxOIo3RbgMWD4qP?usp=drive_link" target="_blank" rel="noreferrer" class="btn btn--fixed">
+<span class="material-symbols-outlined btn__icon">cloud_download</span>
+<span class="btn__text">Ver Propuesta Completa</span>
+</a>
 </div>
-<script>
-// Simple animation for marketing quote only
-const quote = document.querySelector('blockquote');
-if (quote) {
-    quote.style.opacity = '0';
-    quote.style.transform = 'translateY(20px)';
-    quote.style.transition = 'all 1.5s ease-out';
-    
-    setTimeout(() => {
-        quote.style.opacity = '1';
-        quote.style.transform = 'translateY(0)';
-    }, 500);
-}
-</script>
-</body></html>
+
+<div class="spacer"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
