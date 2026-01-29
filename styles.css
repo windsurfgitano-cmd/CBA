@@ -38,24 +38,6 @@ body.has-fixed-topbar {
   padding-top: 72px;
 }
 
-/* ===== SKIP LINK ===== */
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 6px;
-  background: var(--primary);
-  color: var(--text-dark);
-  padding: 8px;
-  text-decoration: none;
-  border-radius: 4px;
-  z-index: 100;
-  transition: top 0.3s;
-}
-
-.skip-link:focus {
-  top: 6px;
-}
-
 /* ===== CONTAINER ===== */
 .container {
   max-width: 1152px;
