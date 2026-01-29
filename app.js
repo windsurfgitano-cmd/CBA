@@ -1,5 +1,49 @@
-// Scroll-triggered animation for vision section
+// Dynamic topbar behavior
 document.addEventListener('DOMContentLoaded', function() {
+    const topbar = document.querySelector('.topbar');
+    const header = document.querySelector('.header');
+    let lastScrollY = window.scrollY;
+    let scrollThreshold = 100; // When to fix the topbar
+    let hideThreshold = 400; // When to hide the topbar
+    
+    if (topbar && header) {
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            // Phase 1: Topbar starts absolute (at top of content)
+            if (currentScrollY < scrollThreshold) {
+                topbar.classList.remove('topbar--fixed', 'topbar--hidden');
+                document.body.classList.remove('has-fixed-topbar');
+            }
+            // Phase 2: Fix topbar to top with smooth animation
+            else if (currentScrollY >= scrollThreshold && currentScrollY < hideThreshold) {
+                if (!topbar.classList.contains('topbar--fixed')) {
+                    topbar.classList.add('topbar--fixed');
+                    document.body.classList.add('has-fixed-topbar');
+                }
+                topbar.classList.remove('topbar--hidden');
+            }
+            // Phase 3: Hide topbar when scrolling further down
+            else if (currentScrollY >= hideThreshold) {
+                if (currentScrollY > lastScrollY) {
+                    // Scrolling down - hide
+                    topbar.classList.add('topbar--hidden');
+                } else {
+                    // Scrolling up - show
+                    topbar.classList.remove('topbar--hidden');
+                }
+            }
+            
+            // Show topbar when scrolling near top
+            if (currentScrollY < hideThreshold + 100) {
+                topbar.classList.remove('topbar--hidden');
+            }
+            
+            lastScrollY = currentScrollY;
+        }, { passive: true });
+    }
+    
+    // Scroll-triggered animation for vision section
     const container = document.querySelector('.vision__container');
     const quote = document.querySelector('.vision__quote');
     
