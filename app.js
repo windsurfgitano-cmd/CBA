@@ -3,10 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const topbar = document.querySelector('.topbar');
     const header = document.querySelector('.header');
     let lastScrollY = window.scrollY;
-    let scrollThreshold = 100; // When to fix the topbar
-    let hideThreshold = 400; // When to hide the topbar
+    let scrollThreshold = 50; // When to fix the topbar
+    let hideThreshold = 300; // When to hide the topbar
     
-    if (topbar && header) {
+    if (topbar) {
         window.addEventListener('scroll', () => {
             const currentScrollY = window.scrollY;
             
