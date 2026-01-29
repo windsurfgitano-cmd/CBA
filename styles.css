@@ -121,7 +121,6 @@ body.has-fixed-topbar {
   gap: 24px;
   min-height: 520px;
   background-color: var(--divine-cream);
-  background-image: var(--divine-shimmer);
   border-radius: 16px;
   align-items: center;
   justify-content: center;
