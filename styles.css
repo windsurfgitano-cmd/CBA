@@ -35,7 +35,7 @@ body {
 }
 
 body.has-fixed-topbar {
-  padding-top: 72px;
+  padding-top: 0; /* El header ya tiene el padding */
 }
 
 /* ===== CONTAINER ===== */
@@ -47,6 +47,7 @@ body.has-fixed-topbar {
 /* ===== HEADER ===== */
 .header {
   position: relative;
+  padding-top: 72px; /* Espacio para la topbar */
 }
 
 .topbar {
@@ -145,14 +146,11 @@ body.has-fixed-topbar {
   align-items: center;
   align-self: center;
   padding: 8px 16px;
-  border-radius: 9999px;
-  background: rgba(212, 175, 55, 0.1);
   color: var(--primary);
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  border: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 .hero__title {
