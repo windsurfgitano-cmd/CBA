@@ -506,6 +506,7 @@ body.has-fixed-topbar {
 /* ===== INVESTMENT ===== */
 .investment {
   padding: 16px;
+  margin-top: 48px;
 }
 
 .investment__container {
